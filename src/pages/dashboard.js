@@ -16,7 +16,6 @@ export default function Dashboard({ user: loggedInUser }) {
   return (
     <LoggedInUserContext.Provider value={{ user }}>
       <div className="bg-gray-background">
-        <div style={{ backgroundImage: 'url(/fondo.png)' }} />
         <Header />
         <div className="ml-5 pl-3 mr- 4 pr-3 grid grid-cols-4 gap-4 justify-between mx-auto max-w-full px-4 lg:px-0">
           <Timeline />
