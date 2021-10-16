@@ -107,6 +107,7 @@
     "prettier",
     "react",
     "react-hooks",
-    "react-native"
+    "react-native",
+    "expo-camera"
   ]
 }
