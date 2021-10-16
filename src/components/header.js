@@ -28,20 +28,23 @@ export default function Header() {
           <div className="text-gray-700 text-center flex items-center align-items">
             {user ? (
               <>
-            <Tab.Navigator initialRouteName="Feed" labeled={false}>
-                <Tab.Screen name="AddContainer" component={EmptyScreen}
+                <Tab.Navigator initialRouteName="Feed" labeled={false}>
+                  <Tab.Screen
+                    name="AddContainer"
+                    component={EmptyScreen}
                     listeners={({ navigation }) => ({
-                        tabPress: event => {
-                            event.preventDefault();
-                            navigation.navigate("Add")
-                        }
+                      tabPress: (event) => {
+                        event.preventDefault();
+                        navigation.navigate('Add');
+                      }
                     })}
                     options={{
-                        tabBarIcon: ({ color, size }) => (
-                            <MaterialCommunityIcons name="plus-box" color={color} size={26} />
-                        ),
-                    }} />
-                                </Tab.Navigator>
+                      tabBarIcon: ({ color, size }) => (
+                        <MaterialCommunityIcons name="plus-box" color={color} size={26} />
+                      )
+                    }}
+                  />
+                </Tab.Navigator>
                 <button
                   type="button"
                   data-testid="sign-out"
