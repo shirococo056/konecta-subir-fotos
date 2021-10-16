@@ -106,7 +106,6 @@
   "plugins": [
     "prettier",
     "react",
-    "react-hooks",
-    "expo-camera"
+    "react-hooks"
   ]
 }
