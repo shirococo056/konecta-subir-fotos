@@ -112,6 +112,7 @@
   "plugins": [
     "prettier",
     "react",
-    "react-hooks"
+    "react-hooks",
+    "react-native"
   ]
 }
