@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 import * as firebase from 'firebase';
-import rootReducer from './redux/reducers'
+import rootReducer from './redux/reducers';
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
