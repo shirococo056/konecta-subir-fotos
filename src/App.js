@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
+import rootReducer from './redux/reducers';
 
 import { View, Text } from 'react-native';
 
 import * as firebase from 'firebase';
-import rootReducer from './redux/reducers';
+import rootReducers from './redux/reducers';
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -21,7 +22,7 @@ import AddScreen from './components/main/Add';
 import SaveScreen from './components/main/Save';
 import CommentScreen from './components/main/Comment';
 
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(rootReducers, applyMiddleware(thunk));
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCFHuM-dhUN45L2yCWE-Z8L6aWryPk098A',
