@@ -4,13 +4,14 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 import * as firebase from 'firebase';
+import rootReducer from './redux/reducers'
+
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import rootReducer from './redux/reducers';
 
 import LandingScreen from './components/auth/Landing';
 import RegisterScreen from './components/auth/Register';
